@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+nav li + li {
+  margin-left: 30px;
+}
+
+nav .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+nav .username i {
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+main {
+  position: relative;
+  width: 75%;
+  height: 100vh;
+  background-color: #444;
+  color: #fff;
+  padding: 40px 100px;
+}
+
+main p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+main .save-article {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #444;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+aside {
+  width: 25%;
+  height: 100vh;
+  padding: 30px 20px;
+  background-color: beige;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+aside .selected {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+aside .selected span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+aside .word {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+aside .word span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+aside .definition {
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+aside .definition span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+aside .vocab-list {
+  margin-top: 40px;
+}
+
+aside .vocab-list li {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.article {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.phrases {
+  margin-top: 30px;
+}
+
+.phrases h2 {
+  letter-spacing: 2px;
+}
+
+.phrases .phrase-list {
+  margin-top: 20px;
+  padding: 10px 25px 25px 25px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.phrases .phrase-list .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.phrases .phrase-list .new-lang {
+  width: 25%;
+}
+
+.phrases .phrase-list .pronounciation {
+  width: 25%;
+}
+
+.phrases .phrase-list .native-lang {
+  width: 25%;
+}
+
+.phrases .phrase-list .status {
+  width: 25%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header .new-lang {
+  width: 25%;
+}
+
+.header .pronounciation {
+  width: 25%;
+}
+
+.header .native-lang {
+  width: 25%;
+}
+
+.header .status {
+  width: 25%;
+}
+
+.beige {
+  background-color: beige;
+}
+
+.cards {
+  padding: 20px;
+}
+
+.cards .card {
+  width: 80%;
+  background-color: beige;
+  margin: 20px 0 20px 20px;
+  padding: 60px 30px;
+  border: 3px solid #eee;
+}
+
+.cards .card .word {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards .card .pronounciation {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.cards .card .reveal {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cards .card .flex-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.cards .card .button {
+  width: 140px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards .card .button + .button {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
